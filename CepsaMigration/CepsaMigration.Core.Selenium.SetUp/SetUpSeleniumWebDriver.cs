@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
+using System.Reflection;
 
 namespace CepsaMigration.Core.Selenium.SetUp
 {
@@ -22,7 +24,7 @@ namespace CepsaMigration.Core.Selenium.SetUp
     /// <seealso cref="CepsaMigration.Core.Selenium.SetUp.ISetUpSeleniumWebDriver" />
     public class SetUpSeleniumWebDriver : ISetUpSeleniumWebDriver
     {
-        private const string WebDriverPath = @"..\CepsaMigration.Core.Selenium.SetUp\binaries\";
+        private const string WebDriverPath = @"..\..\..\CepsaMigration.Core.Selenium.SetUp\binaries\";
 
         /// <summary>
         /// Gets the web driver.
@@ -30,7 +32,7 @@ namespace CepsaMigration.Core.Selenium.SetUp
         /// <value>
         /// The web driver.
         /// </value>
-        private IWebDriver _webDriver { get; set; }
+        private static IWebDriver _webDriver { get; set; }
 
         /// <summary>
         /// Sets up chrome web driver.
@@ -45,9 +47,9 @@ namespace CepsaMigration.Core.Selenium.SetUp
             _webDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(WebDriverPath),
                 new ChromeOptions(), TimeSpan.FromSeconds(10));
 
-            _webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
-            _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            _webDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(5);
+            _webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
+            _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+            _webDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(60);
 
             return _webDriver;
         }

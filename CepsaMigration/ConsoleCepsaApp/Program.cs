@@ -18,9 +18,19 @@ namespace ConsoleCepsaApp
             var appContainer = new AppContainer();
 
             var loginPage = appContainer.SimpleContainer.Resolve<ILoginPage>();
+            var adminMainPage = appContainer.SimpleContainer.Resolve<IAdminMainPage>();
+            var postCodesPage = appContainer.SimpleContainer.Resolve<IPostCodesPage>();
 
+            // Login page
             loginPage.GoToLoginPage();
-            loginPage.LoginUser("asdf", "fdsa");
+            loginPage.LoginUser("dtmadmin", "abrete01");
+
+            // AdminMain page
+            adminMainPage.ClickUsers();
+            adminMainPage.ClickPostCodes();
+
+            // PostCodes page
+            postCodesPage.SearchPostCodes();
         }
     }
 }

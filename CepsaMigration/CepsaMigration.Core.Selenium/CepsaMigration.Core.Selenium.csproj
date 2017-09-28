@@ -47,8 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMainPage.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="PageBase.cs" />
+    <Compile Include="PostCodesPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,8 @@
     /// <summary>
     /// The Login page interface.
     /// </summary>
-    public interface ILoginPage
+    /// <seealso cref="CepsaMigration.Core.Selenium.Contracts.IPageBase" />
+    public interface ILoginPage : IPageBase
     {
         /// <summary>
         /// Goes to login page.
