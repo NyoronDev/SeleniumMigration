@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01- Presentation", "01- Presentation", "{DEDAE878-CAF7-4229-AC7E-A9245A640A36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02- Core", "02- Core", "{95AB79AA-1B05-466F-93E8-7068C0769102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03- Data", "03- Data", "{9D9EF6E4-3A63-4E15-8A6E-41F465491052}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04- Backend", "04- Backend", "{B10FDA3E-088A-4563-B8AB-80A38C9CB5CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCepsaApp", "ConsoleCepsaApp\ConsoleCepsaApp.csproj", "{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CepsaMigration.Core.InjectionContainer", "CepsaMigration.Core.InjectionContainer\CepsaMigration.Core.InjectionContainer.csproj", "{3698C2D6-5A06-416B-A800-BCCE47ED0D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CepsaMigration.Core.Selenium.Contracts", "CepsaMigration.Core.Selenium.Contracts\CepsaMigration.Core.Selenium.Contracts.csproj", "{81686E88-EC3E-406F-9F00-8CBC6B57D451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CepsaMigration.Core.Selenium", "CepsaMigration.Core.Selenium\CepsaMigration.Core.Selenium.csproj", "{63E58209-1525-474F-934E-DE4272567665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CepsaMigration.Core.Selenium.SetUp", "CepsaMigration.Core.Selenium.SetUp\CepsaMigration.Core.Selenium.SetUp.csproj", "{45A7F27F-C994-4FDE-8724-0E48A4308539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3698C2D6-5A06-416B-A800-BCCE47ED0D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3698C2D6-5A06-416B-A800-BCCE47ED0D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3698C2D6-5A06-416B-A800-BCCE47ED0D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3698C2D6-5A06-416B-A800-BCCE47ED0D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81686E88-EC3E-406F-9F00-8CBC6B57D451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81686E88-EC3E-406F-9F00-8CBC6B57D451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81686E88-EC3E-406F-9F00-8CBC6B57D451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81686E88-EC3E-406F-9F00-8CBC6B57D451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E58209-1525-474F-934E-DE4272567665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E58209-1525-474F-934E-DE4272567665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E58209-1525-474F-934E-DE4272567665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E58209-1525-474F-934E-DE4272567665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A7F27F-C994-4FDE-8724-0E48A4308539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A7F27F-C994-4FDE-8724-0E48A4308539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A7F27F-C994-4FDE-8724-0E48A4308539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A7F27F-C994-4FDE-8724-0E48A4308539}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC} = {DEDAE878-CAF7-4229-AC7E-A9245A640A36}
+		{3698C2D6-5A06-416B-A800-BCCE47ED0D9E} = {95AB79AA-1B05-466F-93E8-7068C0769102}
+		{81686E88-EC3E-406F-9F00-8CBC6B57D451} = {95AB79AA-1B05-466F-93E8-7068C0769102}
+		{63E58209-1525-474F-934E-DE4272567665} = {95AB79AA-1B05-466F-93E8-7068C0769102}
+		{45A7F27F-C994-4FDE-8724-0E48A4308539} = {95AB79AA-1B05-466F-93E8-7068C0769102}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9927116-BFDE-4B7E-A8E2-8DF88D7012C1}
+	EndGlobalSection
+EndGlobal
