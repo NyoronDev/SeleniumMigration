@@ -11,10 +11,5 @@
         /// </summary>
         /// <param name="profileId">The profile identifier.</param>
         void AddProfileId(string profileId);
-
-        /// <summary>
-        /// Applies the changes.
-        /// </summary>
-        void ApplyChanges();
     }
 }

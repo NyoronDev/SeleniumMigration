@@ -36,7 +36,6 @@ namespace ConsoleCepsaApp
             // Profile page
             adminMainPage.ClickProfilePage();
             addProfilePage.AddProfileId("ABASTECEDOR");
-            addProfilePage.ApplyChanges();
 
             // ABASTECEDOR 
             // JEFE DE ESA

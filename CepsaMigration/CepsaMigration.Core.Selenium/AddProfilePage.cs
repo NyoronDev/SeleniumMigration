@@ -40,19 +40,11 @@ namespace CepsaMigration.Core.Selenium
             WebDriver.SwitchTo().Frame(3);
             PageFactory.InitElements(WebDriver, this);
 
-            var profileSubmitButton = WebDriver.FindElements(By.Id("submitbutton"))[0];
-
             _profileTextBox.SendKeys(profileId);
-            profileSubmitButton.Click();
-        }
 
-        /// <summary>
-        /// Applies the changes.
-        /// </summary>
-        public void ApplyChanges()
-        {
-            var profileSubmitButton = WebDriver.FindElements(By.Id("submitbutton"))[1];
-            profileSubmitButton.Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1));
+
+            _profileTextBox.SendKeys(Keys.Enter);
         }
     }
 }
