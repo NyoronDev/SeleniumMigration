@@ -38,9 +38,20 @@ namespace CepsaMigration.Core.Selenium
         /// <summary>
         /// Clicks the users.
         /// </summary>
-        public void ClickUsers()
+        /// <param name="isFirstTimeUser">if set to <c>true</c> [is first time user].</param>
+        public void ClickUsers(bool isFirstTimeUser)
         {
-            Thread.Sleep(TimeSpan.FromSeconds(13));
+            if (isFirstTimeUser)
+            {
+                Thread.Sleep(TimeSpan.FromSeconds(13));
+            }
+            else
+            {
+                Thread.Sleep(TimeSpan.FromSeconds(2));
+            }
+            
+            WebDriver.SwitchTo().DefaultContent();
+            PageFactory.InitElements(WebDriver, this);
 
             var action = new Actions(WebDriver);
             action.MoveToElement(_adminMainContent).MoveByOffset(-350, -350).Click().Build().Perform();

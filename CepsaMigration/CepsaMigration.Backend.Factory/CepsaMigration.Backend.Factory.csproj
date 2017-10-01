@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E2CA4B7-5772-4BDA-8051-11D2A3C583CC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleCepsaApp</RootNamespace>
-    <AssemblyName>ConsoleCepsaApp</AssemblyName>
+    <ProjectGuid>{A4BC7C81-7EB1-4615-9044-5E54C446EB00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CepsaMigration.Backend.Factory</RootNamespace>
+    <AssemblyName>CepsaMigration.Backend.Factory</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.6.1\lib\net45\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,33 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="IFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CepsaMigration.Backend.Factory\CepsaMigration.Backend.Factory.csproj">
-      <Project>{a4bc7c81-7eb1-4615-9044-5e54c446eb00}</Project>
-      <Name>CepsaMigration.Backend.Factory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CepsaMigration.Core.InjectionContainer\CepsaMigration.Core.InjectionContainer.csproj">
-      <Project>{3698c2d6-5a06-416b-a800-bcce47ed0d9e}</Project>
-      <Name>CepsaMigration.Core.InjectionContainer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CepsaMigration.Core.Selenium.Contracts\CepsaMigration.Core.Selenium.Contracts.csproj">
-      <Project>{81686e88-ec3e-406f-9f00-8cbc6b57d451}</Project>
-      <Name>CepsaMigration.Core.Selenium.Contracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CepsaMigration.Data.DataService.Contracts\CepsaMigration.Data.DataService.Contracts.csproj">
-      <Project>{1FEB9302-A205-4918-AD13-4457FA085777}</Project>
+      <Project>{1feb9302-a205-4918-ad13-4457fa085777}</Project>
       <Name>CepsaMigration.Data.DataService.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CepsaMigration.Data.Entities\CepsaMigration.Data.Entities.csproj">
-      <Project>{cf0b9c38-5f31-49e1-93d0-f218fd2b9f51}</Project>
-      <Name>CepsaMigration.Data.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -50,6 +50,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CepsaMigration.Backend.Factory\CepsaMigration.Backend.Factory.csproj">
+      <Project>{a4bc7c81-7eb1-4615-9044-5e54c446eb00}</Project>
+      <Name>CepsaMigration.Backend.Factory</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CepsaMigration.Core.Selenium.Contracts\CepsaMigration.Core.Selenium.Contracts.csproj">
       <Project>{81686e88-ec3e-406f-9f00-8cbc6b57d451}</Project>
       <Name>CepsaMigration.Core.Selenium.Contracts</Name>
@@ -61,6 +65,14 @@
     <ProjectReference Include="..\CepsaMigration.Core.Selenium\CepsaMigration.Core.Selenium.csproj">
       <Project>{63e58209-1525-474f-934e-de4272567665}</Project>
       <Name>CepsaMigration.Core.Selenium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CepsaMigration.Data.DataService.Contracts\CepsaMigration.Data.DataService.Contracts.csproj">
+      <Project>{1feb9302-a205-4918-ad13-4457fa085777}</Project>
+      <Name>CepsaMigration.Data.DataService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CepsaMigration.Data.DataService\CepsaMigration.Data.DataService.csproj">
+      <Project>{c1dfbb08-8164-41aa-b9e3-3a9b7d44f875}</Project>
+      <Name>CepsaMigration.Data.DataService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

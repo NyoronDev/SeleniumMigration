@@ -5,11 +5,12 @@
     /// </summary>
     /// <seealso cref="CepsaMigration.Core.Selenium.Contracts.IPageBase" />
     public interface IAddProfilePage : IPageBase
-    {    
+    {
         /// <summary>
         /// Adds the profile identifier.
         /// </summary>
         /// <param name="profileId">The profile identifier.</param>
-        void AddProfileId(string profileId);
+        /// <param name="isFirstTime">if set to <c>true</c> [is first time].</param>
+        void AddProfileId(string profileId, bool isFirstTime);
     }
 }

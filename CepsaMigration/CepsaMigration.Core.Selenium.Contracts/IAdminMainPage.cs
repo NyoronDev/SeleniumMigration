@@ -9,7 +9,8 @@
         /// <summary>
         /// Clicks the users.
         /// </summary>
-        void ClickUsers();
+        /// <param name="isFirstTimeUser">if set to <c>true</c> [is first time user].</param>
+        void ClickUsers(bool isFirstTimeUser);
 
         /// <summary>
         /// Clicks the post codes.

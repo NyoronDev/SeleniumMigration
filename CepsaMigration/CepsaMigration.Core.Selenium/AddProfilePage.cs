@@ -20,6 +20,7 @@ namespace CepsaMigration.Core.Selenium
         private IWebElement _profileTextBox;
 
         #endregion
+
         /// <summary>
         /// Initializes a new instance of the <see cref="AddProfilePage"/> class.
         /// </summary>
@@ -33,12 +34,16 @@ namespace CepsaMigration.Core.Selenium
         /// Adds the profile identifier.
         /// </summary>
         /// <param name="profileId">The profile identifier.</param>
-        public void AddProfileId(string profileId)
+        /// <param name="isFirstTime">if set to <c>true</c> [is first time].</param>
+        public void AddProfileId(string profileId, bool isFirstTime)
         {
             Thread.Sleep(TimeSpan.FromSeconds(2));
 
-            WebDriver.SwitchTo().Frame(3);
-            PageFactory.InitElements(WebDriver, this);
+            if (isFirstTime)
+            {
+                WebDriver.SwitchTo().Frame(3);
+                PageFactory.InitElements(WebDriver, this);
+            }
 
             _profileTextBox.SendKeys(profileId);
 
