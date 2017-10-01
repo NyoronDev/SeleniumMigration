@@ -34,7 +34,7 @@ namespace ConsoleCepsaApp
                 workCodeList = dataService.ObtainWorkCodeList();
             }
 
-            // Login page
+            // Login page.
             loginPage.GoToLoginPage();
             loginPage.LoginUser("dtmadmin", "abrete01");
 
@@ -45,19 +45,20 @@ namespace ConsoleCepsaApp
                 {
                     Console.WriteLine($"Try to migrate WorkCode {workCode.WorkCodeId}");
 
-                    // AdminMain page
+                    // AdminMain page.
                     adminMainPage.ClickUsers(isFirstTimeUser);
                     adminMainPage.ClickPostCodes();
 
-                    // PostCodes page
+                    // PostCodes page.
                     postCodesPage.SearchPostCode(workCode.WorkCodeId);
 
-                    // Profile page
+                    // Profile page.
                     adminMainPage.ClickProfilePage();
 
                     var isFirstTime = true;
                     foreach (var profile in workCode.Profiles)
                     {
+                        // Add profile.
                         addProfilePage.AddProfileId(profile, isFirstTime);
                         isFirstTime = false;
                     }
