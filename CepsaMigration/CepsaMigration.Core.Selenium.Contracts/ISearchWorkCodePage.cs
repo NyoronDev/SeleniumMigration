@@ -4,11 +4,12 @@
     /// The post codes page interface.
     /// </summary>
     /// <seealso cref="CepsaMigration.Core.Selenium.Contracts.IPageBase" />
-    public interface IPostCodesPage : IPageBase
+    public interface ISearchWorkCodePage : IPageBase
     {
         /// <summary>
         /// Searches the post codes.
         /// </summary>
-        void SearchPostCodes();
+        /// <param name="postCode">The post code.</param>
+        void SearchPostCode(string postCode);
     }
 }

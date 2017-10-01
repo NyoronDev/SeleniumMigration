@@ -40,7 +40,7 @@ namespace CepsaMigration.Core.Selenium
         /// </summary>
         public void ClickUsers()
         {
-            Thread.Sleep(TimeSpan.FromSeconds(12));
+            Thread.Sleep(TimeSpan.FromSeconds(13));
 
             var action = new Actions(WebDriver);
             action.MoveToElement(_adminMainContent).MoveByOffset(-350, -350).Click().Build().Perform();
@@ -54,6 +54,19 @@ namespace CepsaMigration.Core.Selenium
             Thread.Sleep(TimeSpan.FromSeconds(4));
             var action = new Actions(WebDriver);
             action.MoveToElement(_adminMainContent).MoveByOffset(-150, -117).Click().Build().Perform();
+        }
+
+        /// <summary>
+        /// Clicks the profile page.
+        /// </summary>
+        public void ClickProfilePage()
+        {
+            Thread.Sleep(TimeSpan.FromSeconds(2));
+
+            WebDriver.SwitchTo().DefaultContent();
+
+            var action = new Actions(WebDriver);
+            action.MoveToElement(_adminMainContent).MoveByOffset(-150, -10).Click().Build().Perform();
         }
     }
 }

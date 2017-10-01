@@ -19,7 +19,8 @@ namespace ConsoleCepsaApp
 
             var loginPage = appContainer.SimpleContainer.Resolve<ILoginPage>();
             var adminMainPage = appContainer.SimpleContainer.Resolve<IAdminMainPage>();
-            var postCodesPage = appContainer.SimpleContainer.Resolve<IPostCodesPage>();
+            var postCodesPage = appContainer.SimpleContainer.Resolve<ISearchWorkCodePage>();
+            var addProfilePage = appContainer.SimpleContainer.Resolve<IAddProfilePage>();
 
             // Login page
             loginPage.GoToLoginPage();
@@ -30,7 +31,15 @@ namespace ConsoleCepsaApp
             adminMainPage.ClickPostCodes();
 
             // PostCodes page
-            postCodesPage.SearchPostCodes();
+            postCodesPage.SearchPostCode("Analista Aplicación");
+
+            // Profile page
+            adminMainPage.ClickProfilePage();
+            addProfilePage.AddProfileId("ABASTECEDOR");
+            addProfilePage.ApplyChanges();
+
+            // ABASTECEDOR 
+            // JEFE DE ESA
         }
     }
 }

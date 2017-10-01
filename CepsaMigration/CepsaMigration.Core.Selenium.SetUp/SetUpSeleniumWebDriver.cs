@@ -45,7 +45,7 @@ namespace CepsaMigration.Core.Selenium.SetUp
             }
 
             _webDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(WebDriverPath),
-                new ChromeOptions(), TimeSpan.FromSeconds(10));
+                new ChromeOptions(), TimeSpan.FromSeconds(30));
 
             _webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);

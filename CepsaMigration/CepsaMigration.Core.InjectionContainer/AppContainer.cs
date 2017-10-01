@@ -32,7 +32,8 @@ namespace CepsaMigration.Core.InjectionContainer
             buildContainer.RegisterType<SetUpSeleniumWebDriver>().As<ISetUpSeleniumWebDriver>();
             buildContainer.RegisterType<LoginPage>().As<ILoginPage>();
             buildContainer.RegisterType<AdminMainPage>().As<IAdminMainPage>();
-            buildContainer.RegisterType<PostCodesPage>().As<IPostCodesPage>();
+            buildContainer.RegisterType<SearchWorkCodePage>().As<ISearchWorkCodePage>();
+            buildContainer.RegisterType<AddProfilePage>().As<IAddProfilePage>();
 
             SimpleContainer = buildContainer.Build();
         }

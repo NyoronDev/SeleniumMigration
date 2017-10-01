@@ -47,10 +47,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProfilePage.cs" />
     <Compile Include="AdminMainPage.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="PageBase.cs" />
-    <Compile Include="PostCodesPage.cs" />
+    <Compile Include="SearchWorkCodePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

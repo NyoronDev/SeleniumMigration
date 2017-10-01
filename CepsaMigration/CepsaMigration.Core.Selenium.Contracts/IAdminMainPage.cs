@@ -15,5 +15,10 @@
         /// Clicks the post codes.
         /// </summary>
         void ClickPostCodes();
+
+        /// <summary>
+        /// Clicks the profile page.
+        /// </summary>
+        void ClickProfilePage();
     }
 }
