@@ -43,6 +43,8 @@ namespace ConsoleCepsaApp
             {
                 try
                 {
+                    Console.WriteLine($"Try to migrate WorkCode {workCode.WorkCodeId}");
+
                     // AdminMain page
                     adminMainPage.ClickUsers(isFirstTimeUser);
                     adminMainPage.ClickPostCodes();
@@ -59,6 +61,8 @@ namespace ConsoleCepsaApp
                         addProfilePage.AddProfileId(profile, isFirstTime);
                         isFirstTime = false;
                     }
+
+                    Console.WriteLine($"WorkCode {workCode.WorkCodeId} added correctly.");
                 }
                 catch (Exception ex)
                 {
@@ -68,6 +72,8 @@ namespace ConsoleCepsaApp
 
                 isFirstTimeUser = false;
             }
+
+            Console.ReadKey();
         }
     }
 }
