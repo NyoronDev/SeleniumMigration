@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAddProfilePage.cs" />
+    <Compile Include="IAddStudyProgramPage.cs" />
     <Compile Include="IAdminMainPage.cs" />
     <Compile Include="ILoginPage.cs" />
     <Compile Include="IPageBase.cs" />

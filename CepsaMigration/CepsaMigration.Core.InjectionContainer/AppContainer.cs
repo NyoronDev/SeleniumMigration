@@ -39,6 +39,7 @@ namespace CepsaMigration.Core.InjectionContainer
             buildContainer.RegisterType<AdminMainPage>().As<IAdminMainPage>();
             buildContainer.RegisterType<SearchWorkCodePage>().As<ISearchWorkCodePage>();
             buildContainer.RegisterType<AddProfilePage>().As<IAddProfilePage>();
+            buildContainer.RegisterType<AddStudyProgramPage>().As<IAddStudyProgramPage>();
             
             SimpleContainer = buildContainer.Build();
         }

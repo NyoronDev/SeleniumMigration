@@ -79,5 +79,18 @@ namespace CepsaMigration.Core.Selenium
             var action = new Actions(WebDriver);
             action.MoveToElement(_adminMainContent).MoveByOffset(-150, -10).Click().Build().Perform();
         }
+
+        /// <summary>
+        /// Clicks the study programs.
+        /// </summary>
+        public void ClickStudyPrograms()
+        {
+            Thread.Sleep(TimeSpan.FromSeconds(3));
+
+            WebDriver.SwitchTo().DefaultContent();
+
+            var action = new Actions(WebDriver);
+            action.MoveToElement(_adminMainContent).MoveByOffset(-150, 50).Click().Build().Perform();
+        }
     }
 }

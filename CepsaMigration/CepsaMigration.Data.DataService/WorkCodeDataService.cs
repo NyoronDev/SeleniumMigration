@@ -20,13 +20,13 @@ namespace CepsaMigration.Data.DataService
             workCodeEntity.Add(new WorkCodeEntity
             {
                 WorkCodeId = "Analista Aplicación",
-                Profiles = new List<string> { "ABASTECEDOR", "JEFE DE ESA" }
+                StudyPrograms = new List<string> { "1", "10" }
             });
 
             workCodeEntity.Add(new WorkCodeEntity
             {
                 WorkCodeId = "Analista Calidad",
-                Profiles = new List<string> { "ABASTECEDOR", "JEFE DE ESA" }
+                StudyPrograms = new List<string> { "123456", "2345", "5" }
             });
 
             return workCodeEntity;

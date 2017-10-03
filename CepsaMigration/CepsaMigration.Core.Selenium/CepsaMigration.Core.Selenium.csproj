@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddProfilePage.cs" />
+    <Compile Include="AddStudyProgramPage.cs" />
     <Compile Include="AdminMainPage.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="PageBase.cs" />

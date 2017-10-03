@@ -16,11 +16,11 @@ namespace CepsaMigration.Data.Entities
         public string WorkCodeId { get; set; }
 
         /// <summary>
-        /// Gets or sets the profiles.
+        /// Gets or sets the study programs.
         /// </summary>
         /// <value>
-        /// The profiles.
+        /// The study programs.
         /// </value>
-        public IList<string> Profiles { get; set; }
+        public IList<string> StudyPrograms { get; set; }
     }
 }

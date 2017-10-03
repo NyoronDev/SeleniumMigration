@@ -21,5 +21,10 @@
         /// Clicks the profile page.
         /// </summary>
         void ClickProfilePage();
+
+        /// <summary>
+        /// Clicks the study programs.
+        /// </summary>
+        void ClickStudyPrograms();
     }
 }

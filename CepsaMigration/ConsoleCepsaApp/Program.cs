@@ -26,7 +26,7 @@ namespace ConsoleCepsaApp
             var loginPage = appContainer.SimpleContainer.Resolve<ILoginPage>();
             var adminMainPage = appContainer.SimpleContainer.Resolve<IAdminMainPage>();
             var postCodesPage = appContainer.SimpleContainer.Resolve<ISearchWorkCodePage>();
-            var addProfilePage = appContainer.SimpleContainer.Resolve<IAddProfilePage>();
+            var addStudyProgramPage = appContainer.SimpleContainer.Resolve<IAddStudyProgramPage>();
 
             IList<WorkCodeEntity> workCodeList;
             using (var dataService = factory.GetWorkCodeDataService())
@@ -52,15 +52,19 @@ namespace ConsoleCepsaApp
                     // PostCodes page.
                     postCodesPage.SearchPostCode(workCode.WorkCodeId);
 
-                    // Profile page.
-                    adminMainPage.ClickProfilePage();
+                    // Study Program page.
+                    adminMainPage.ClickStudyPrograms();
 
                     var isFirstTime = true;
-                    foreach (var profile in workCode.Profiles)
+                    foreach (var studyProgram in workCode.StudyPrograms)
                     {
-                        // Add profile.
-                        addProfilePage.AddProfileId(profile, isFirstTime);
+                        // Add study program.
+                        Console.WriteLine($"Try to add the study program {studyProgram}");
+
+                        addStudyProgramPage.AddStudyProgramId(studyProgram, isFirstTime);
                         isFirstTime = false;
+
+                        Console.WriteLine($"Study program {studyProgram} added correctly.");
                     }
 
                     Console.WriteLine($"WorkCode {workCode.WorkCodeId} added correctly.");
