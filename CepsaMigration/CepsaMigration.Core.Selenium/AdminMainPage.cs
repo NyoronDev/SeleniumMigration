@@ -64,7 +64,7 @@ namespace CepsaMigration.Core.Selenium
         {
             Thread.Sleep(TimeSpan.FromSeconds(4));
             var action = new Actions(WebDriver);
-            action.MoveToElement(_adminMainContent).MoveByOffset(-150, -117).Click().Build().Perform();
+            action.MoveToElement(_adminMainContent).MoveByOffset(-150, -90).Click().Build().Perform();
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace CepsaMigration.Core.Selenium
             WebDriver.SwitchTo().DefaultContent();
 
             var action = new Actions(WebDriver);
-            action.MoveToElement(_adminMainContent).MoveByOffset(-150, -10).Click().Build().Perform();
+            action.MoveToElement(_adminMainContent).MoveByOffset(-150, 0).Click().Build().Perform();
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace CepsaMigration.Core.Selenium
             WebDriver.SwitchTo().DefaultContent();
 
             var action = new Actions(WebDriver);
-            action.MoveToElement(_adminMainContent).MoveByOffset(-150, 50).Click().Build().Perform();
+            action.MoveToElement(_adminMainContent).MoveByOffset(-150, 65).Click().Build().Perform();
         }
     }
 }

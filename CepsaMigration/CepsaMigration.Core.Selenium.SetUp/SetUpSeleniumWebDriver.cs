@@ -51,6 +51,8 @@ namespace CepsaMigration.Core.Selenium.SetUp
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
             _webDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(60);
 
+            _webDriver.Manage().Window.Size = new System.Drawing.Size(1050, 852);
+
             return _webDriver;
         }
     }
