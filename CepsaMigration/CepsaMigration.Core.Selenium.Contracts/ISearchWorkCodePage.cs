@@ -10,6 +10,6 @@
         /// Searches the post codes.
         /// </summary>
         /// <param name="postCode">The post code.</param>
-        void SearchPostCode(string postCode);
+        void SearchWorkCode(string postCode);
     }
 }

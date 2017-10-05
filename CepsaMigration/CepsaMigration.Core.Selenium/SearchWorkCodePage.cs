@@ -40,7 +40,7 @@ namespace CepsaMigration.Core.Selenium
         /// Searches the work code.
         /// </summary>
         /// <param name="postCode">The post code.</param>
-        public void SearchPostCode(string postCode)
+        public void SearchWorkCode(string postCode)
         {
             Thread.Sleep(TimeSpan.FromSeconds(1));
 

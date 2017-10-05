@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CepsaMigration.Data.TypeSafeEnum;
+using System.Collections.Generic;
 
 namespace CepsaMigration.Data.Entities
 {
@@ -14,6 +15,14 @@ namespace CepsaMigration.Data.Entities
         /// The work code.
         /// </value>
         public string WorkCodeId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the type of the data.
+        /// </summary>
+        /// <value>
+        /// The type of the data.
+        /// </value>
+        public DataType DataType { get; set; } 
 
         /// <summary>
         /// Gets or sets the study programs.

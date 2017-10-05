@@ -73,6 +73,10 @@
       <Project>{cf0b9c38-5f31-49e1-93d0-f218fd2b9f51}</Project>
       <Name>CepsaMigration.Data.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CepsaMigration.Data.TypeSafeEnum\CepsaMigration.Data.TypeSafeEnum.csproj">
+      <Project>{6358c57c-ffce-46df-bdae-817e38af4328}</Project>
+      <Name>CepsaMigration.Data.TypeSafeEnum</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
