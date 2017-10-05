@@ -23,21 +23,6 @@ namespace CepsaMigration.Data.DataService
         /// <returns></returns>
         public IList<WorkCodeEntity> ObtainWorkCodeList()
         {
-            //var workCodeEntity = new List<WorkCodeEntity>();
-            //workCodeEntity.Add(new WorkCodeEntity
-            //{
-            //    WorkCodeId = "Analista Aplicación",
-            //    StudyPrograms = new List<string> { "1", "10" }
-            //});
-
-            //workCodeEntity.Add(new WorkCodeEntity
-            //{
-            //    WorkCodeId = "Analista Calidad",
-            //    StudyPrograms = new List<string> { "123456", "2345", "5" }
-            //});
-
-            //return workCodeEntity;
-
             var workCodeEntityList = new List<WorkCodeEntity>();
 
             using (var fileStream = new FileStream(DataExcelPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -105,7 +90,6 @@ namespace CepsaMigration.Data.DataService
         /// </summary>
         public void Dispose()
         {
-            // TODO - Create the Dispose method.
         }
     }
 }
